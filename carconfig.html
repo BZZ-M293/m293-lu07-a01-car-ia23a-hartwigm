@@ -3,12 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>Fahrzeug-Konfigurator</title>
-
 </head>
 <body>
-
 <h1>Fahrzeug-Konfigurator</h1>
 
-
+<form action="https://it.bzz.ch/demo/formdata/index.php" method="post">
+  <fieldset>
+    <legend>Fahrzeugauswahl</legend>
+    <label for="fahrzeugmodell">Fahrzeugmodell:</label>
+    <select name="fahrzeugmodell" id="fahrzeugmodell">
+      <option value="modellA">Modell A</option>
+      <option value="modellB">Modell B</option>
+      <option value="modellC">Modell C</option>
+    </select>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Lackfarben</legend>
+    <label><input type="radio" name="lackfarbe" value="Rot"> Rot</label>
+    <label><input type="radio" name="lackfarbe" value="Blau"> Blau</label>
+    <label><input type="radio" name="lackfarbe" value="Grün"> Grün</label>
+    <label><input type="radio" name="lackfarbe" value="Schwarz"> Schwarz</label>
+  </fieldset>
+  
+  <button type="submit">Konfiguration absenden</button>
+</form>
 </body>
 </html>
